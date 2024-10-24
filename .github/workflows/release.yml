@@ -30,7 +30,7 @@ jobs:
     uses: stellar-expert/soroban-build-workflow/.github/workflows/release.yml@main
     with:
       release_name: ${{ github.ref_name }}
-      release_description: 'Soroswap Aggregator contract release'
+      release_description: 'Soroswap deployer contract release'
       relative_path: './contracts/deployer'
       package: "soroswap-aggregator-deployer"
       make_target: './Makefile'
@@ -40,7 +40,7 @@ jobs:
     uses: stellar-expert/soroban-build-workflow/.github/workflows/release.yml@main
     with:
       release_name: ${{ github.ref_name }}
-      release_description: 'Soroswap Aggregator contract release'
+      release_description: 'Aggregator soroswap adapter release'
       relative_path: './contracts/adapters/soroswap'
       package: "soroswap-adapter"
       make_target: './Makefile'
@@ -50,7 +50,7 @@ jobs:
     uses: stellar-expert/soroban-build-workflow/.github/workflows/release.yml@main
     with:
       release_name: ${{ github.ref_name }}
-      release_description: 'Soroswap Aggregator contract release'
+      release_description: 'Aggregator phoenix adapter release'
       relative_path: './contracts/adapters/phoenix'
       package: "phoenix-adapter"
       make_target: './Makefile'
